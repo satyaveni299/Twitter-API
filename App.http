@@ -1,0 +1,41 @@
+POST http://localhost:3000/register/
+Content-Type:application/json
+{
+  "username": "adam_richard",
+  "password": "richad_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+  
+POST http://localhost:3000/login/
+Content-Type:application/json
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+  
+GET http://localhost:3000/user/tweets/feed/?user_id=1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzI1MDI1Mjk1fQ.-DfScXql8JBtEsWPV59s_mkYCUxWk_sIwVyAaPl3eZ0
+
+
+GET http://localhost:3000/user/following/?user_id=1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzI1MDI1Mjk1fQ.-DfScXql8JBtEsWPV59s_mkYCUxWk_sIwVyAaPl3eZ0
+
+GET http://localhost:3000/user/followers/?user_id=1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzI1MDI1Mjk1fQ.-DfScXql8JBtEsWPV59s_mkYCUxWk_sIwVyAaPl3eZ0
+
+GET http://localhost:3000/tweets/3/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzI1MDI1Mjk1fQ.-DfScXql8JBtEsWPV59s_mkYCUxWk_sIwVyAaPl3eZ0
+
+GET http://localhost:3000/tweets/1/likes
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzI1MDI1Mjk1fQ.-DfScXql8JBtEsWPV59s_mkYCUxWk_sIwVyAaPl3eZ0
+
+
+GET http://localhost:3000/user/tweets/?username=JoeBiden
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzI1MDI1Mjk1fQ.-DfScXql8JBtEsWPV59s_mkYCUxWk_sIwVyAaPl3eZ0
+
+POST http://localhost:3000/user/tweets/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzI1MDI1Mjk1fQ.-DfScXql8JBtEsWPV59s_mkYCUxWk_sIwVyAaPl3eZ0
+
+DELETE http://localhost:3000/tweets/2/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzI1MDI1Mjk1fQ.-DfScXql8JBtEsWPV59s_mkYCUxWk_sIwVyAaPl3eZ0
